@@ -6,9 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intention Timer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/f16be916f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <h1 class="mainTitle">Intention Timer</h1>
+        </header>
+        <div class="newActWrapper">
+            <h1 class="newActTitle">New Activity</h1>
+            <main>
+                <div class="activityWrapper">
+                    <h2>Select an Activity:</h2>
+                    <div class="actBox studyBox">
+                        <img src="assets/study.svg" alt="textbook icon">
+                        <h3>Study</h3>
+                    </div>
+                    <div class="actBox chillWrapper">
+                        <img src="assets/meditate.svg" alt="zen flower icon">
+                        <h3>Chill</h3>
+                    </div>
+                    <div class="actBox exerciseBox">
+                        <img src="assets/exercise.svg" alt="running shoe icon">
+                        <h3>Exercise</h3>>
+                    </div>
+                    <div class="actBox dogBox">
+                        <img src="" alt="dog icon">
+                        <h3>Walk the Dog</h3>>
+                    </div>
+                    <div class="actBox workBox">
+                        <img src="" alt="work icon">
+                        <h3>Work</h3>>
+                    </div>
+                    <div class="actBox cleanBox">
+                        <img src="" alt="cleaning icon">
+                        <h3>Cleaning</h3>>
+                    </div>
+                </div>
+                <div>
+                    <h2>What would you like to accomplish during this time?</h2>
+                    <input type="text">
+                </div>
+                <div class="timeWrapper">
+                    <div class="minutes">
+                        <h2>Minutes</h2>
+                        <input type="number">
+                    </div>
+                    <div class="seconds">
+                        <h2>Seconds</h2>
+                        <input type="number">
+                    </div>
+                </div>
+                <button class="start">Start Activity</button>
+            </main>
+        </div>
+    </div>
+    <div class="pastActs">
+        <h1>Past Activities</h1>
+        <!-- this is where past activities will appear -->
+    </div>
 </body>
 </html>
