@@ -1,0 +1,66 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #CBC9CF;
+}
+
+.wrapper {
+    background-color: #2B2733;
+    display: flex;
+}
+
+header {
+    background-color: #46424D;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    background-color: #46424D;
+    margin-left: 2em; 
+    padding-top: 1em;
+    border-radius: 5px;
+}
+
+.newActWrapper {
+   width: 60%;
+}
+
+.newActTitle {
+    margin: .5em 1em;
+}
+
+.activityWrapper {
+    display: flex;
+}
+
+.selectAct {
+    margin: 10px 0 5px 48px;
+}
+
+.actBox {
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 1em 4em;
+    margin: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.studyBox, .chillBox, .exerciseBox {
+    width: 15em;
+}
+
+.actIcon {
+    width: 4em;
+}
+
+.pastTitle {
+    margin: .5em 1em;
+}
+
+.pastActs {
+    margin-left: 2em;
+    border-left: 1px solid white;
+}
