@@ -5,42 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intention Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f16be916f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <h1 class="mainTitle">Intention Timer</h1>
+    </header>
     <div class="wrapper">
-        <header>
-            <h1 class="mainTitle">Intention Timer</h1>
-        </header>
         <div class="newActWrapper">
             <h1 class="newActTitle">New Activity</h1>
             <main>
+                <h2 class="selectAct">Select an Activity:</h2>
                 <div class="activityWrapper">
-                    <h2>Select an Activity:</h2>
                     <div class="actBox studyBox">
-                        <img src="assets/study.svg" alt="textbook icon">
+                        <img src="assets/study.svg" class="actIcon" alt="textbook icon">
                         <h3>Study</h3>
                     </div>
-                    <div class="actBox chillWrapper">
-                        <img src="assets/meditate.svg" alt="zen flower icon">
+                    <div class="actBox chillBox">
+                        <img src="assets/meditate.svg" class="actIcon" alt="zen flower icon">
                         <h3>Chill</h3>
                     </div>
                     <div class="actBox exerciseBox">
-                        <img src="assets/exercise.svg" alt="running shoe icon">
-                        <h3>Exercise</h3>>
-                    </div>
-                    <div class="actBox dogBox">
-                        <img src="" alt="dog icon">
-                        <h3>Walk the Dog</h3>>
-                    </div>
-                    <div class="actBox workBox">
-                        <img src="" alt="work icon">
-                        <h3>Work</h3>>
-                    </div>
-                    <div class="actBox cleanBox">
-                        <img src="" alt="cleaning icon">
-                        <h3>Cleaning</h3>>
+                        <img src="assets/exercise.svg" class="actIcon" alt="running shoe icon">
+                        <h3>Exercise</h3>
                     </div>
                 </div>
                 <div>
@@ -60,10 +49,10 @@
                 <button class="start">Start Activity</button>
             </main>
         </div>
-    </div>
-    <div class="pastActs">
-        <h1>Past Activities</h1>
-        <!-- this is where past activities will appear -->
+        <div class="pastActs">
+            <h1 class="pastTitle">Past Activities</h1>
+            <!-- this is where past activities will appear -->
+        </div>
     </div>
 </body>
 </html>
