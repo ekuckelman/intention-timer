@@ -8,6 +8,7 @@
 .wrapper {
     background-color: #2B2733;
     display: flex;
+    height: 800px;
 }
 
 header {
@@ -16,19 +17,20 @@ header {
     padding: 1em;
 }
 
+.newActWrapper {
+    width: 60%;
+}
+
+.newActTitle {
+    margin: .5em 1em;
+}
+
 main {
     background-color: #46424D;
     margin-left: 2em; 
     padding-top: 1em;
     border-radius: 5px;
-}
-
-.newActWrapper {
-   width: 60%;
-}
-
-.newActTitle {
-    margin: .5em 1em;
+    height: 550px;
 }
 
 .activityWrapper {
@@ -40,7 +42,8 @@ main {
 }
 
 .actBox {
-    border: 1px white solid;
+    width: 15em;
+    border: 2px #CBC9CF solid;
     border-radius: 5px;
     padding: 1em 4em;
     margin: 2em;
@@ -48,12 +51,66 @@ main {
     text-align: center;
 }
 
-.studyBox, .chillBox, .exerciseBox {
-    width: 15em;
+.studyBox:hover {
+    border-color:#B3FD78;  
 }
+
+.chillBox:hover {
+    border-color: #C278FD;
+}
+
+.exerciseBox:hover {
+    border-color: #FD8078;
+}
+
 
 .actIcon {
     width: 4em;
+}
+
+.likeToDo {
+    margin-left: 1.3em;
+}
+
+.accomplishment {
+    -webkit-appearance: none;
+    background-color: #46424D;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 92%;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: 1em;
+}
+
+.timeWrapper {
+    display: flex;
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+.minutesInput, .secondsInput {
+    -webkit-appearance: none;
+    width: 20.15em;
+    background-color: #46424D;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1em;
+    margin-top: 1.75em;
+}
+
+.minutesInput {
+    margin-right: 7.7em;
+}
+
+.start {
+    position: relative;
+    left: 67%;
+    font-size: 1.5em;
+    color: #46424D;
+    border-radius: 5px;
+    margin-top: 1.7em;
+    padding: 5px 40px;
 }
 
 .pastTitle {
@@ -63,4 +120,9 @@ main {
 .pastActs {
     margin-left: 2em;
     border-left: 1px solid white;
+}
+
+p {
+    margin-left: 2em;
+    width: 90%;
 }

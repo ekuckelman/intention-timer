@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1 class="mainTitle">Intention Timer</h1>
+        <h1 class="mainTitle">Activty Timer</h1>
     </header>
     <div class="wrapper">
         <div class="newActWrapper">
@@ -20,30 +20,33 @@
                 <h2 class="selectAct">Select an Activity:</h2>
                 <div class="activityWrapper">
                     <div class="actBox studyBox">
-                        <img src="assets/study.svg" class="actIcon" alt="textbook icon">
+                        <img src="assets/study.svg" class="whiteIcon actIcon" alt="textbook icon">
+                        <img src="assets/study-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Study</h3>
                     </div>
                     <div class="actBox chillBox">
-                        <img src="assets/meditate.svg" class="actIcon" alt="zen flower icon">
+                        <img src="assets/meditate.svg" class="whiteIcon actIcon" alt="zen flower icon">
+                        <img src="assets/meditate-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Chill</h3>
                     </div>
                     <div class="actBox exerciseBox">
-                        <img src="assets/exercise.svg" class="actIcon" alt="running shoe icon">
+                        <img src="assets/exercise.svg" class="whiteIcon actIcon" alt="running shoe icon">
+                        <img src="assets/exercise-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Exercise</h3>
                     </div>
                 </div>
                 <div>
-                    <h2>What would you like to accomplish during this time?</h2>
-                    <input type="text">
+                    <h2 class="likeToDo">What would you like to accomplish during this time?</h2>
+                    <input class="accomplishment" type="text">
                 </div>
                 <div class="timeWrapper">
                     <div class="minutes">
                         <h2>Minutes</h2>
-                        <input type="number">
+                        <input class="minutesInput" type="number">
                     </div>
                     <div class="seconds">
                         <h2>Seconds</h2>
-                        <input type="number">
+                        <input class="secondsInput" type="number">
                     </div>
                 </div>
                 <button class="start">Start Activity</button>
@@ -51,6 +54,8 @@
         </div>
         <div class="pastActs">
             <h1 class="pastTitle">Past Activities</h1>
+            <p>You haven't logged any activities yet. Complete the form
+                on the left to get started</p>
             <!-- this is where past activities will appear -->
         </div>
     </div>
