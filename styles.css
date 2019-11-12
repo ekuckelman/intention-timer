@@ -27,6 +27,7 @@ header {
 
 main {
     background-color: #46424D;
+    box-shadow: 0 0 5px #26222D;
     margin-left: 2em; 
     padding-top: 1em;
     border-radius: 5px;
@@ -51,8 +52,13 @@ main {
     text-align: center;
 }
 
+.actIcon {
+    width: 4em;
+}
+
 .studyBox:hover {
-    border-color:#B3FD78;  
+    border-color:#B3FD78;
+    color: #B3FD78; 
 }
 
 .chillBox:hover {
@@ -63,8 +69,7 @@ main {
     border-color: #FD8078;
 }
 
-
-.actIcon {
+.colorIcon {
     width: 4em;
 }
 
@@ -74,6 +79,7 @@ main {
 
 .accomplishment {
     -webkit-appearance: none;
+    outline: none;
     background-color: #46424D;
     border: none;
     border-bottom: 2px solid white;
@@ -91,6 +97,7 @@ main {
 
 .minutesInput, .secondsInput {
     -webkit-appearance: none;
+    outline: none;
     width: 20.15em;
     background-color: #46424D;
     border: none;
@@ -105,6 +112,7 @@ main {
 
 .start {
     position: relative;
+    outline:none;
     left: 67%;
     font-size: 1.5em;
     color: #46424D;
