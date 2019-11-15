@@ -19,11 +19,12 @@ header {
 
 .newActWrapper {
     width: 60%;
-    
 }
 
 .newActTitle {
     margin: .5em 1em;
+    display: block;
+    
 }
 
 .main1 {
@@ -125,7 +126,7 @@ header {
 
 .currentActWrapper {
     width: 100%;
-    /* display: none; */
+    display: none;
 }
 
 .currentActTitle {
@@ -162,13 +163,13 @@ header {
 .circle {
     border: 5px #CBC9CF solid;
     border-radius: 50%;
-    padding: 9em;
     display: inline-block;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .main2Start {
     font-size: 2em;
+    padding: 4em 3.5em;
 }
 
 .pastTitle {
