@@ -19,19 +19,21 @@ header {
 
 .newActWrapper {
     width: 60%;
+    
 }
 
 .newActTitle {
     margin: .5em 1em;
 }
 
-main {
+.main1 {
     background-color: #46424D;
     box-shadow: 0 0 5px #26222D;
     margin-left: 2em; 
     padding-top: 1em;
     border-radius: 5px;
     height: 550px;
+    display: block;
 }
 
 .activityWrapper {
@@ -119,6 +121,54 @@ main {
     border-radius: 5px;
     margin-top: 1.7em;
     padding: 5px 40px;
+}
+
+.currentActWrapper {
+    width: 100%;
+    /* display: none; */
+}
+
+.currentActTitle {
+    margin: .5em 1em;
+}
+
+.main2{
+    background-color: #46424D;
+    box-shadow: 0 0 5px #26222D;
+    margin-left: 2em; 
+    padding-top: 1em;
+    border-radius: 5px;
+    height: 550px;
+    text-align: center;
+    display: none;
+}
+
+.categoryType {
+    margin-top: 1em;
+}
+
+.time {
+ font-size: 4em;
+}
+
+.minutes {
+
+}
+
+.seconds {
+
+}
+
+.circle {
+    border: 5px #CBC9CF solid;
+    border-radius: 50%;
+    padding: 9em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.main2Start {
+    font-size: 2em;
 }
 
 .pastTitle {
