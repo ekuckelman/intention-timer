@@ -3,7 +3,8 @@ var chillBox = document.querySelector('.chillBox');
 var exerciseBox = document.querySelector('.exerciseBox');
 var main1 = document.querySelector('.main1');
 var main2 = document.querySelector('.main2');
-// var currentActWrapper = document.querySelector('.currentActWrapper');
+var currentActWrapper = document.querySelector('.currentActWrapper');
+var newActTitle = document.querySelector('.newActTitle');
 
 var startBtn = document.querySelector('.start');
 
@@ -31,8 +32,10 @@ function changeExerciseBorder() {
 }
 
 function changeDisplay () {
-   main1.style.display = 'none'; 
-    main2.style.display ='block';
-   console.log('got here')
+    newActTitle.style.display = 'none';
+    main1.style.display = 'none'; 
+    currentActWrapper.style.display = 'block';
+    main2.style.display = 'block';
+    
    
 }
