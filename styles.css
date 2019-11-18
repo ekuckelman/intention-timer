@@ -152,12 +152,9 @@ header {
  font-size: 4em;
 }
 
-.minutes {
-
-}
-
+.minutes,
 .seconds {
-
+    display: inline-block;
 }
 
 .circle {
