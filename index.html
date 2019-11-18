@@ -20,17 +20,14 @@
                 <div class="activityWrapper">
                     <div class="actBox studyBox">
                         <img src="assets/study.svg" class="studyIcon actIcon" alt="textbook icon">
-                        <img src="assets/study-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Study</h3>
                     </div>
                     <div class="actBox chillBox">
                         <img src="assets/meditate.svg" class="actIcon" alt="zen flower icon">
-                        <img src="assets/meditate-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Chill</h3>
                     </div>
                     <div class="actBox exerciseBox">
                         <img src="assets/exercise.svg" class="actIcon" alt="running shoe icon">
-                        <img src="assets/exercise-active.svg" class="colorIcon actIcon" alt="" hidden= "true">
                         <h3>Exercise</h3>
                     </div>
                 </div>
@@ -39,22 +36,25 @@
                     <input class="accomplishment" type="text">
                 </div>
                 <div class="timeWrapper">
-                    <div class="minutes">
+                    <div class="">
                         <h2>Minutes</h2>
                         <input class="minutesInput" type="number">
                     </div>
-                    <div class="seconds">
+                    <div>
                         <h2>Seconds</h2>
                         <input class="secondsInput" type="number">
                     </div>
                 </div>
-                <button class="start" type="submit">Start Activity</button>
+                <button class="start">Start Activity</button>
             </div>
             <div class="currentActWrapper">
                 <h1 class="currentActTitle">Current Activity</h1>
                 <div class="main2">
                     <h2 class="categoryType">Category Type</h2>
-                    <h1 class="time"><span class="minutes">5</span>:<span class="seconds">00</span></h1>
+                    <div class="time">
+                        <div class="minutes"></div> :
+                        <div class="seconds"></div>
+                    </div>
                     <div class="circle">
                         <h2 class="main2Start">Start</h2>
                     </div>
