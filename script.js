@@ -10,10 +10,11 @@ var secondsInput = document.querySelector('.secondsInput');
 var timerMinute = document.querySelector('.minutes');
 var timerSeconds = document.querySelector('.seconds');
 var startBtn = document.querySelector('.start');
-var acccomplishment = document.querySelector('.accomplishment');
+var accomplishment = document.querySelector('.accomplishment');
 var category = document.querySelector('.categoryType');
 var circle = document.querySelector('.circle');
 var timerStart = document.querySelector('.main2Start');
+var inputs = document.querySelectorAll('.inputs');
 
 studyBox.addEventListener('click', changeStudyBorder);
 chillBox.addEventListener('click', changeChillBorder);
@@ -21,6 +22,9 @@ exerciseBox.addEventListener('click', changeExerciseBorder);
 startBtn.addEventListener('click', changeDisplay);
 startBtn.addEventListener('click', updateTimer);
 startBtn.addEventListener('click', changeTimerColor);
+document.addEventListener('keyup', checkInputs);
+// minutesInput.addEventListener('keyup', checkSeconds);
+// minutesInput.addEventListener('keyup', checkAccomplishment);
 
 function changeStudyBorder() {
     studyBox.style.borderColor = '#B3FD78';
@@ -55,20 +59,26 @@ function updateTimer () {
     event.preventDefault();
     timerMinute.innerHTML = minutesInput.value;
     timerSeconds.innerHTML = secondsInput.value;
-    category.innerHTML = acccomplishment.value;
+    category.innerHTML = accomplishment.value;
 }
 
 function changeTimerColor () {
     if(studyBox.clicked == true) {
-        console.log('true click')
         circle.style.borderColor = "#B3FD78";
     } else if(chillBox.clicked == true) {
-        console.log('chill man')
         circle.style.borderColor = "#C278FD"
     } else if(exerciseBox.clicked == true) {
         circle.style.borderColor = "#FD8078"
     }
     else {
         circle.style.borderColor = "#CBC9CF"
+    }
+}
+
+function checkInputs () {
+    if(accomplishment.value == "" || minutesInput.value == "" || secondsInput.value == "") {
+        startBtn.setAttribute("disabled", null);
+    } else {
+        startBtn.removeAttribute("disabled");
     }
 }
