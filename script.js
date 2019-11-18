@@ -20,11 +20,13 @@ chillBox.addEventListener('click', changeChillBorder);
 exerciseBox.addEventListener('click', changeExerciseBorder);
 startBtn.addEventListener('click', changeDisplay);
 startBtn.addEventListener('click', updateTimer);
+startBtn.addEventListener('click', changeTimerColor);
 
 function changeStudyBorder() {
     studyBox.style.borderColor = '#B3FD78';
     chillBox.style.borderColor = '#CBC9CF';
     exerciseBox.style.borderColor = '#CBC9CF';
+    return studyBox.clicked = true;
     
 }
 
@@ -32,12 +34,14 @@ function changeChillBorder() {
     chillBox.style.borderColor = '#C278FD';
     exerciseBox.style.borderColor = '#CBC9CF';
     studyBox.style.borderColor = '#CBC9CF';
+    return chillBox.clicked = true;
 }
 
 function changeExerciseBorder() {
     exerciseBox.style.borderColor = '#FD8078';
     studyBox.style.borderColor = '#CBC9CF';
     chillBox.style.borderColor = '#CBC9CF';
+    return exerciseBox.clicked = true;
 }
 
 function changeDisplay () {
@@ -52,4 +56,19 @@ function updateTimer () {
     timerMinute.innerHTML = minutesInput.value;
     timerSeconds.innerHTML = secondsInput.value;
     category.innerHTML = acccomplishment.value;
+}
+
+function changeTimerColor () {
+    if(studyBox.clicked == true) {
+        console.log('true click')
+        circle.style.borderColor = "#B3FD78";
+    } else if(chillBox.clicked == true) {
+        console.log('chill man')
+        circle.style.borderColor = "#C278FD"
+    } else if(exerciseBox.clicked == true) {
+        circle.style.borderColor = "#FD8078"
+    }
+    else {
+        circle.style.borderColor = "#CBC9CF"
+    }
 }
