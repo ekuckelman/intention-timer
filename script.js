@@ -23,8 +23,7 @@ startBtn.addEventListener('click', changeDisplay);
 startBtn.addEventListener('click', updateTimer);
 startBtn.addEventListener('click', changeTimerColor);
 document.addEventListener('keyup', checkInputs);
-// minutesInput.addEventListener('keyup', checkSeconds);
-// minutesInput.addEventListener('keyup', checkAccomplishment);
+circle.addEventListener('click', startTimer);
 
 function changeStudyBorder() {
     studyBox.style.borderColor = '#B3FD78';
@@ -82,3 +81,22 @@ function checkInputs () {
         startBtn.removeAttribute("disabled");
     }
 }
+
+function startTimer () {
+    var countdown = setInterval(function() {
+        if (timerMinute.innerHTML <= 0 && timerSeconds.innerHTML <= 0) {
+          clearInterval(countdown);
+          return;
+        }
+          timerSeconds.innerHTML -= 1;
+          if (timerSeconds.innerHTML < 0) {
+             timerMinute.innerHTML -= 1;
+             timerSeconds.innerHTML = 59;
+          } if (timerSeconds > 0) {
+              timerMinute.innerHTML = 0;
+              timerSeconds.innerHTML = 0;
+          } if(timerSeconds.innerHTML < 10) {
+              timerSeconds.innerHTML = "0" + timerSeconds.innerHTML;
+          } 
+        }, 1000);
+    }
