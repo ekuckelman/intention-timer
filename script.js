@@ -1,20 +1,14 @@
 var studyBox = document.querySelector('.studyBox');
 var chillBox = document.querySelector('.chillBox');
 var exerciseBox = document.querySelector('.exerciseBox');
-var main1 = document.querySelector('.main1');
-var main2 = document.querySelector('.main2');
-var currentActWrapper = document.querySelector('.currentActWrapper');
-var newActTitle = document.querySelector('.newActTitle');
 var minutesInput = document.querySelector('.minutesInput');
 var secondsInput = document.querySelector('.secondsInput');
 var timerMinute = document.querySelector('.minutes');
 var timerSeconds = document.querySelector('.seconds');
 var startBtn = document.querySelector('.start');
 var accomplishment = document.querySelector('.accomplishment');
-var category = document.querySelector('.categoryType');
 var circle = document.querySelector('.circle');
 var timerStart = document.querySelector('.main2Start');
-var inputs = document.querySelectorAll('.inputs');
 
 studyBox.addEventListener('click', changeStudyBorder);
 chillBox.addEventListener('click', changeChillBorder);
@@ -29,8 +23,7 @@ function changeStudyBorder() {
     studyBox.style.borderColor = '#B3FD78';
     chillBox.style.borderColor = '#CBC9CF';
     exerciseBox.style.borderColor = '#CBC9CF';
-    return studyBox.clicked = true;
-    
+    return studyBox.clicked = true; 
 }
 
 function changeChillBorder() {
@@ -48,6 +41,11 @@ function changeExerciseBorder() {
 }
 
 function changeDisplay () {
+    var newActTitle = document.querySelector('.newActTitle');
+    var main1 = document.querySelector('.main1');
+    var currentActWrapper = document.querySelector('.currentActWrapper');
+    var main2 = document.querySelector('.main2');
+
     newActTitle.style.display = 'none';
     main1.style.display = 'none'; 
     currentActWrapper.style.display = 'block';
@@ -55,6 +53,8 @@ function changeDisplay () {
 }
 
 function updateTimer () {
+    var category = document.querySelector('.categoryType');
+
     event.preventDefault();
     timerMinute.innerHTML = minutesInput.value;
     timerSeconds.innerHTML = secondsInput.value;
