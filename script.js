@@ -7,8 +7,9 @@ var timerMinute = document.querySelector('.minutes');
 var timerSeconds = document.querySelector('.seconds');
 var startBtn = document.querySelector('.start');
 var accomplishment = document.querySelector('.accomplishment');
+var main2 = document.querySelector('.main2');
 var circle = document.querySelector('.circle');
-var timerStart = document.querySelector('.main2Start');
+
 
 studyBox.addEventListener('click', changeStudyBorder);
 chillBox.addEventListener('click', changeChillBorder);
@@ -44,7 +45,6 @@ function changeDisplay () {
     var newActTitle = document.querySelector('.newActTitle');
     var main1 = document.querySelector('.main1');
     var currentActWrapper = document.querySelector('.currentActWrapper');
-    var main2 = document.querySelector('.main2');
 
     newActTitle.style.display = 'none';
     main1.style.display = 'none'; 
@@ -85,6 +85,7 @@ function checkInputs () {
 function startTimer () {
     var countdown = setInterval(function() {
         if (timerMinute.innerHTML <= 0 && timerSeconds.innerHTML <= 0) {
+            timerComplete();
           clearInterval(countdown);
           return;
         }
@@ -100,3 +101,12 @@ function startTimer () {
           } 
         }, 1000);
     }
+
+function timerComplete () {
+    var timerStart = document.querySelector('.main2Start');
+    var completed = document.querySelector('.completed');
+    var logActivity = document.querySelector('.logActivity');
+    timerStart.style.display = "none";
+    completed.style.display = "inline-block";
+    logActivity.style.display = "block";
+}

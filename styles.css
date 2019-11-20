@@ -145,7 +145,7 @@ header {
     margin-left: 2em; 
     padding-top: 1em;
     border-radius: 5px;
-    height: 550px;
+    height: 580px;
     text-align: center;
     display: none;
 }
@@ -173,6 +173,25 @@ header {
 .main2Start {
     font-size: 2em;
     padding: 4em 3.5em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.completed {
+    font-size: 2em;
+    padding: 4em 2.3em;
+    display: none;
+}
+
+.logActivity {
+    display: none;
+    position: relative;
+    left: 35%;
+    font-size: 1.5em;
+    color: #46424D;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    padding: 5px 40px;
     cursor: pointer;
 }
 
