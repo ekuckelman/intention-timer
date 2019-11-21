@@ -192,6 +192,7 @@ header {
     border-radius: 5px;
     margin-top: 1.5em;
     padding: 5px 40px;
+    outline: none;
     cursor: pointer;
 }
 
@@ -204,7 +205,48 @@ header {
     border-left: 1px solid white;
 }
 
-p {
+.noActivities {
     margin-left: 2em;
     width: 90%;
+    display: block;
+}
+
+.pastCard {
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #46424D;
+    padding: .5em;
+    border-radius: 5px;
+    width: 160%;
+    display: none;
+}
+
+.pastCategoryTitle {
+    position: relative;
+    right: 5%;
+}
+
+.pastCategory {
+    display: flex;
+}
+
+.categoryColor {
+    border: 11px solid magenta;
+    border-radius: 50%;
+    position: relative;
+    left: 94%;
+}
+
+.pastTime {
+    display: flex;
+    margin: .3em 0;
+}
+
+.pastMinutes {
+    margin-right: 1em;
+    font-weight: 300;
+}
+
+.pastSeconds {
+    font-weight: 300;
 }
