@@ -9,6 +9,10 @@ var startBtn = document.querySelector('.start');
 var accomplishment = document.querySelector('.accomplishment');
 var main2 = document.querySelector('.main2');
 var circle = document.querySelector('.circle');
+var logActivityBtn = document.querySelector('.logActivity');
+var pastCard = document.querySelector(".pastCard");
+var noActivities = document.querySelector(".noActivities");
+var category = document.querySelector('.categoryType');
 
 
 studyBox.addEventListener('click', changeStudyBorder);
@@ -19,6 +23,7 @@ startBtn.addEventListener('click', updateTimer);
 startBtn.addEventListener('click', changeTimerColor);
 document.addEventListener('keyup', checkInputs);
 circle.addEventListener('click', startTimer);
+logActivityBtn.addEventListener('click', showActivityCard);
 
 function changeStudyBorder() {
     studyBox.style.borderColor = '#B3FD78';
@@ -53,8 +58,6 @@ function changeDisplay () {
 }
 
 function updateTimer () {
-    var category = document.querySelector('.categoryType');
-
     event.preventDefault();
     timerMinute.innerHTML = minutesInput.value;
     timerSeconds.innerHTML = secondsInput.value;
@@ -110,3 +113,27 @@ function timerComplete () {
     completed.style.display = "inline-block";
     logActivity.style.display = "block";
 }
+
+
+function showActivityCard () {
+    var pastTimerMinutes = document.querySelector(".pastTimerMinutes");
+    var pastTimerSeconds = document.querySelector(".pastTimerSeconds");
+    var pastAccomplishment = document.querySelector(".pastAccomplishment");
+    if (logActivityBtn.clicked = true) {
+        noActivities.style.display = "none";
+        pastCard.style.display = "block";
+        pastAccomplishment.innerHTML = category.innerHTML;
+        pastTimerMinutes.innerHTML = minutesInput.value;
+        pastTimerSeconds.innerHTML = secondsInput.value;
+    }
+}
+
+// function changePastCategory () {
+//     var pastCatColor = document.querySelector(".categoryColor");
+//     var pastCatTitle = document.querySelector(".pastCategoryTitle");
+// }
+// If .logActivity btn is clicked then create a new card 
+// that replaces the p tag with category selected, user's
+//  accomplishment, time, and color of timer
+// should also clear timer page and have only create new 
+// activity btn
